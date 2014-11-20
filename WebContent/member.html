@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>註冊</title>
+	<link rel="shortcut icon" href="img/icon.ico">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/member.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- /.modal -->
+	<div id="login-modal" class="modal fade">
+	 	<div class="modal-dialog">
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+	        		<button type="button" class="close" data-dismiss="modal">
+	          			<span aria-hidden="true">&times;</span>
+	          			<span class="sr-only">Close</span>
+	        		</button>
+	        		<h4 class="modal-title">登入</h4>
+	      		</div>
+	      		<div id="login-select" class="modal-body">
+	        		
+            		<button id="login-user" type="button" class="btn btn-success btn-lg btn-block">用戶登入</button>
+            		<span class="help-block">當您註冊成為一般用戶後，請點選用戶登入</span>
+            		<button id="login-translator" type="button" class="btn btn-primary btn-lg btn-block">翻譯員登入</button>
+            		<span id="login" class="help-block">當您是翻譯員，請點選翻譯員登入</span>
+	        		
+	      		</div>
+	      		<div id="login-input" class="modal-body" style="display:none">
+	        		
+            		<input type="text" class="form-control input-lg" id="m_account" placeholder="手機號碼" onkeypress="return enter(event);"> 
+            		<input type="password" class="form-control input-lg" id="m_pwd" placeholder="密碼" onkeypress="return enter(event);">
+            		<span id="login_fail" class="help-block" style="color:red;display:none;">帳號或密碼錯誤</span>
+	        		
+	      		</div>
+	      		<div class="modal-footer">
+	        		<a id="modal_reg" href="member.html">立即註冊翻譯會員</a>
+	        		<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	        		<button type="button" class="btn btn-primary">登入</button>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+	<nav id="navbar" class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target = ".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.jsp"><img src="img/app_icon_32x32.png"> 雲端翻譯服務</a>
+			</div>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.jsp">首頁</a></li>
+					<li class="active"><a href="account.jsp">帳務中心</a></li>
+					<li><a href="service.jsp">客戶服務</a></li>
+					<li><div class="col-sm-10"><button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#login-modal">登入</button></div></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id = "header-wrapper">
+		<div id = "header" class="container">
+			<div id="hello-wrapper">
+				<div id="photo"><img src="img/web_icon.png" /></div>
+				<div id="market">
+					<div id="googleplay"></div>
+					<div id="appstore"></div>
+				</div>
+			</div>
+			<div id="regist-wrapper">
+				<button id="user" type="button" class="btn btn-success btn-lg btn-block">一般用戶註冊</button>
+				<span class="help-block">註冊成為一般用戶，立即享有專人翻譯服務</span>
+				<button id="translator" type="button" class="btn btn-primary btn-lg btn-block">翻譯員註冊</button>
+				<span class="help-block">註冊成為雲端翻譯員，讓您的第二外語能力不被埋沒</span>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="content-wrapper" style="display:none">
+		<div id="content" class="container">
+			<div id="user-reg" class="user">
+				<p class="subtitle"><i class="fa fa-user"></i> 一般用戶註冊</p>
+				<span class="help-block">註冊成為一般用戶，立即享有專人翻譯服務</span>
+			</div>
+			<div id="translator-reg" class="translator">
+				<p class="subtitle"><i class="fa fa-user"></i> 翻譯員註冊</p>
+				<span class="help-block">註冊成為雲端翻譯員，讓您的第二外語能力不被埋沒</span>
+			</div>
+			<!--<form class="form-horizontal" method="post" action="member.register">-->
+				<input type="text" id="people" name="type" value="normal" style="display:none;">
+			  	<div id="account-wrapper" class="form-group">
+			    	<div class="col-sm-10">
+			      		<input type="account" class="form-control input-lg" name="account" id="account" placeholder="手機號碼">
+
+			      		<span class="help-block">請填寫本國手機號碼做為使用者帳號 ex: 09XX000000</span>
+			    	</div>
+			  	</div>
+			  	<div id="pwd-wrapper" class="form-group">
+			    	<div class="col-sm-10">
+			      		<input type="password" class="form-control input-lg" id="pwd" placeholder="使用者密碼">
+			      		<span class="help-block">請輸入至少6位，數字或英文子母組成的密碼</span>
+			      		<input type="password" class="form-control input-lg" id="pwd2" name="pwd" placeholder="確認密碼">
+			      		<span class="help-block">請確認您的密碼</span>
+			    	</div>
+			  	</div>
+			    <div id="mail-wrapper" class="form-group">
+			    	<div class="col-sm-10">
+			      		<input type="text" class="form-control input-lg" id="mail" placeholder="信箱">
+			      		<span class="help-block">請填寫您的電子郵件信箱</span>
+			      		<input type="text" class="form-control input-lg" id="mail2" name="mail" placeholder="確認你的信箱">
+			      		<span class="help-block">請確認您的電子郵件信箱，我們將發送驗證信到此信箱</span>
+			    	</div>
+			  	</div>
+			  	<div id="name-wrapper" class="form-group">
+			    	<div class="col-sm-10">
+			      		<input type="text" class="form-control input-lg" name="name" id="name" placeholder="姓名">
+			      		<span class="help-block">請填寫您的真實姓名</span>
+			    	</div>
+			  	</div>
+			  	<div class="col-sm-5 form-group translator">
+				  <select  name="lang" id="lang" class="form-control">
+					  <option value="tai" >泰文 -> 中文</option>
+					  <option value="ven" >越南語 -> 中文</option>
+					  <option value="ind" >印尼語 -> 中文</option>
+					  <option value="eng" >英語 -> 中文</option>
+					</select>
+					<span class="help-block">請選擇您可以提供的翻譯語言</span>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-sm-10">
+						<button class="btn btn-default" onClick="reg();">送出</button>
+					</div>
+				</div>
+			<!--</form>-->
+		</div>
+	</div>
+
+	<div id="content-img" class="container">
+		<p>雲端翻譯服務，您的專屬翻譯員。</p>
+		<div id="content-market">
+			<div id="content-googleplay"></div>
+			<div id="content-appstore"></div>
+		</div>
+		<img src="img/phone.png"/>
+		<img src="img/phone2.png"/>
+	</div>
+
+	<div id = "copyright-wrapper">
+		<div id="copyright" class="container">
+			<div id="link-wrapper">
+				<a href="aboutus.html" ><i class="fa fa-rocket"></i> 關於我們</a>
+				<a href="http://nthu.kits.tw/service/home.html" ><i class="fa fa-phone"></i> 雲端電話服務</a>
+				<a href="service.jsp" ><i class="fa fa-info"></i> 客服中心</a>
+			</div>
+			<div id="contact">
+				<a href="#"><div id="fb" class="contact_icon"><img src="img/fb.png"></div></a>
+				<a href="#"><div id="mail" class="contact_icon"><img src="img/gmail.png"></div></a>
+			</div>
+			<p id="copy_p">清華大學雲端翻譯服務 | 清華大學雲端網路電話服務 | Web designed by Mao Chen-Ning. | National Tsing Hua University.</p>
+		</div>
+	</div>
+<script type="text/javascript" src="js/member.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>

@@ -1,0 +1,483 @@
+.modal-body {
+	height: auto !important; 
+}
+
+.titlebox{
+	width: 220px;
+	border-bottom: 2px solid #00AEAE;
+	margin: 0px auto;
+	margin-bottom: 2%;
+	letter-spacing: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	position: relative;
+}
+
+.titlebox p {
+	margin: 0px;
+}
+
+.title {
+	font-family: 'Microsoft JhengHei' !important;
+	font-size: 28px;
+	text-align: left;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.content_p{
+	font-size: 18px;
+	font-family: 'Microsoft JhengHei' !important;
+}
+
+.subtitle{
+	font-family: 'Microsoft JhengHei' !important;
+	font-size: 24px !important;
+	text-align: left;
+	letter-spacing: 1px !important;
+	margin-top: 20px;
+}
+
+.modal-body{
+	height: 150px;
+}
+
+.modal-body input {
+	margin-bottom: 20px;
+}
+
+.modal-dialog{
+	margin-top: 10%;
+}
+
+#modal_reg {
+	float: left;
+}
+
+div {
+	display: block;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFF;
+	background-image: url(../img/bg2.png);
+}
+
+
+
+#header-wrapper {
+	width: 100%;
+	height: 100px;
+	
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#header{
+	height: 100%;
+	background-color: #FFF;
+	background-position: bottom right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-top: 25px;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#header p{
+	margin-left: 50px;
+	font-size: 50px;
+	letter-spacing: 5px;
+	font-family: 'Microsoft JhengHei';
+}
+
+
+#photo {
+	position: relative;
+	width: 650px;
+	margin: 0px auto;
+}
+
+#photo img{
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 650px) {
+	#photo {
+		position: relative;
+		width: 420px;
+		margin: 0px auto;
+	}
+}
+
+@media (max-width: 320px) {
+	#photo {
+		position: relative;
+		width: 315px;
+		margin: 0px auto;
+	}
+}
+
+#navbar ul {
+	font-size: 18px;
+	font-family: 'Microsoft JhengHei';
+}
+
+#navbar {
+	margin-bottom: 0px;
+	background-color: rgba(248, 248, 248, 0.5);
+	border-color: rgba(248, 248, 248, 0.5);
+}
+
+a {
+	text-decoration: none;
+}
+
+#content-wrapper {
+	width: 100%;
+	height: auto;
+	background-image: url(../img/bg2.png);
+
+}
+
+#pocket-bar{
+	width: 100%;
+	height: 50px;
+	background-color: #FFFFFF;
+	
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+#pocket-bar p {
+	width: 50%;
+	float: left;
+	font-size: 20px;
+	color: 	#EA7500;
+	font-family: 'Microsoft JhengHei';
+	margin: 0px;
+	margin-top: 10px;
+}
+
+#pocket-bar button {
+	float: right;
+	margin-right: 20px;
+}
+
+
+
+#content-img{
+	height: 300px;
+	background-color: #FFF;
+	border-top: 1px solid #eaeaea;
+	padding-top: 50px;
+	padding-right: 100px;
+}
+
+#content-img img {
+	height: 350px;
+	width: auto;
+	float: right;
+	margin-right: 20px;
+}
+
+#content-img p{
+	width: 300px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 50px;
+	float: left;
+	font-size: 20px;
+	font-family: 'Microsoft JhengHei';
+}
+
+#content{
+	height: auto;
+	background-color: white;
+	padding: 0px;
+	border-top: 1px solid #eaeaea;
+	
+	/*box-shadow:0px -7px 12px -2px rgba(37, 37, 43, 0.5);*/
+}
+
+#account-setting{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background-color: #F1F1F1;
+	border-top: 1px solid #eaeaea;
+	z-index: 1;
+}
+
+
+#login-btn {
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+
+#content-menu{
+	float: left;
+	height: 100%;
+	width: 15%;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu_btn{
+	width: 100%;
+	height: 50px;
+	padding-top: 15px;
+	cursor: pointer;
+	border-bottom: 1px solid #F1F1F1;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu_btn:hover{
+	background: #FFF;
+}
+
+.menu_btn-focus{
+	background: #FFF;
+	border-left: 3px solid #003D79;
+}
+
+.menu_btn p {
+	width: 95%;
+	font-size: 20px;
+	font-family: 'Microsoft JhengHei';
+	text-align: right;
+}
+
+#content-data{
+	float: left;
+	height: 100%;
+	width: 85%;
+	background-color: #FFF;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu_data {
+	width: 100%;
+	height: 100%;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+.menu_data p{
+	width: 100%;
+	font-size: 18px;
+	font-family: 'Microsoft JhengHei';
+	text-align: left;
+}
+
+#menu_photo {
+	width: 200px;
+	margin-bottom: 15px;
+
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#menu_photo img {
+	width: 90%;
+}
+
+#loading-bar {
+	width: 222px;
+	height: 25px;
+	margin: 0px auto;
+	margin-top:200px;
+	background-image: url(../img/loading.gif);
+	background-repeat: no-repeat;
+}
+
+#loading-page{
+	width: 100%;
+	height: 80%;
+	display: none;
+}
+
+#loading-page p {
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Microsoft JhengHei';
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#personal {
+	height: 100%;
+	width: 75%;
+	margin: 0px auto;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#input-pwd {
+	height: 100%;
+	width: 40%;
+	margin: 0px auto;
+}
+
+.content-title{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+	font-size: 20px;
+	font-family: 'Microsoft JhengHei';
+}
+
+#contact{
+	width: 200px;
+	height: 60px;
+
+}
+
+.contact_icon{
+	width: 50px;
+	height: 50px;
+	margin-left: 15px;
+	margin-right: 15px;
+	float: left;
+	background-color: rgba(36, 36, 36, 1);
+	border-radius: 40px;
+}
+
+.contact_icon:hover {
+	-ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Chrome, Safari, Opera */
+    transform: scale(1.05);
+}
+
+
+.contact_icon img {
+	width: 50px;
+	height: 50px;
+}
+
+#copyright-wrapper {
+	background: rgba(36, 36, 36, 1);
+}
+
+#link-wrapper {
+	margin-bottom: 10px;
+	 
+}
+
+#link-wrapper a{
+	margin-bottom: 20px;
+	color: rgba(255, 255, 255, 0.68) !important;
+	font-size: 16px;
+	margin-right: 20px;
+}
+
+#copyright {
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#copyright p {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+	margin: 0px auto;
+}
+
+#copy_p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.68) !important;
+}
+
+
+
+#tg-update-btn{
+	width: auto;
+	float: right;
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+
+.tg  {
+	border-collapse:collapse;
+	border-spacing:0;
+	width: 98%;
+	height: auto;
+}
+.tg td{
+	font-family: 'Microsoft JhengHei';
+	font-size:20px;
+	padding:2px;
+	
+	border-width:1px;
+	overflow:hidden;
+	word-break:normal;
+	text-align:center;
+	border-color: #E7E7E7;
+	vertical-align: middle;
+}
+.tg th{
+	font-family: 'Microsoft JhengHei';
+	font-size:20px;
+	font-weight:normal;
+	padding:2px;
+	
+	border-width:1px;
+	border-color: #E7E7E7;
+	overflow:hidden;
+	text-align:center;
+	word-break:normal;
+	vertical-align: middle;
+}
+.tg .tg-s6z2{
+	text-align:center;
+	height: 50px;
+}
+.tg .tg-s0xy{text-align:center;background-color: #FFA042;}
+.tg .tg-bepu{background-color:#f56b00;color:#333333}
+.tg .tg-j3wa{
+	font-family: 'Microsoft JhengHei';
+	background-color:#68cbd0;
+	color:#FFFFFF;
+	height: 60px;
+}
+.tg .tg-hy62{
+	background-color:#c0c0c0;
+}
+.tg .tg-xojs{
+	font-family: 'Microsoft JhengHei';
+	text-align:center;
+}
+
+.tg-btn{
+	width: 100%;
+	height: 100%;
+	background-color: #eaeaea;
+	border-radius: 2px;
+	font-size: 22px;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+}
+
+.tg-btn:hover{
+	box-shadow:1px 1px 3px 2px rgba(20%,20%,40%,0.5) inset;
+}
